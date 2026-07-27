@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cmvjqjbakkin"]
+
+[node name="Obsataculo" type="Node2D" unique_id=747811381]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1039807889]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=625430030]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=449620396]

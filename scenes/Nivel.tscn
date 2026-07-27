@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cngquebcg5rs3"]
+
+[node name="Nivel" type="Node2D" unique_id=1289267309]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2126383693]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D" unique_id=1161576705]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=478982707]
