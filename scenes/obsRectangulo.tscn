@@ -5,12 +5,16 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1yohh"]
 size = Vector2(36, 101.5)
 
-[node name="Obsataculo" type="Node2D" unique_id=747811381]
+[node name="Obsataculo" type="Node2D"]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1039807889]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=625430030]
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
 texture = ExtResource("1_2jybd")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=449620396]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("RectangleShape2D_1yohh")
+debug_color = Color(0, 0.6, 1, 0.42)
+

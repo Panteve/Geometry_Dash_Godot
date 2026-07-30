@@ -6,15 +6,19 @@
 a = Vector2(995, 7)
 b = Vector2(-599.75, 9.5)
 
-[node name="Nivel" type="Node2D" unique_id=1289267309]
+[node name="Nivel" type="Node2D"]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1161576705]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(803, 31)
+collision_layer = 1
+collision_mask = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=2126383693]
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
 position = Vector2(75, 55)
 texture = ExtResource("1_bvore")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=478982707]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(-121, 117)
 shape = SubResource("SegmentShape2D_26r0l")
+debug_color = Color(0, 0.6, 1, 0.42)
+
