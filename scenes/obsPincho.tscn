@@ -3,16 +3,17 @@
 [ext_resource type="Texture2D" uid="uid://c5mpormvkw45f" path="res://assets/Obstaculo.png" id="1_pcc5d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onsl3"]
-size = Vector2(808, 891)
+size = Vector2(876, 891)
 
-[node name="Node2D" type="Node2D" unique_id=239339801]
+[node name="Pincho" type="Node2D" unique_id=239339801]
+position = Vector2(12, 0)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=310113773]
+position = Vector2(6, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1272566769]
-position = Vector2(1778, 1029)
 texture = ExtResource("1_pcc5d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=469793612]
-position = Vector2(1792, 929.5)
+position = Vector2(10, -98)
 shape = SubResource("RectangleShape2D_onsl3")
