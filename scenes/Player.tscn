@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ch016851gp046"]
 
 [ext_resource type="Texture2D" uid="uid://dnxba55i5joq6" path="res://assets/Cubo.jpeg" id="1_p0vlq"]
+[ext_resource type="Script" uid="uid://bfaow1iuysloy" path="res://scripts/player.gd" id="1_v6fml"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aiq8p"]
 size = Vector2(121.5, 120)
@@ -8,11 +9,13 @@ size = Vector2(121.5, 120)
 [node name="Player" type="Node2D" unique_id=713773703]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=480910932]
+script = ExtResource("1_v6fml")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1898796098]
-position = Vector2(18, 14)
 texture = ExtResource("1_p0vlq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=515350953]
-position = Vector2(17, 14)
+[node name="FloorCollisionShape" type="CollisionShape2D" parent="CharacterBody2D" unique_id=515350953]
+shape = SubResource("RectangleShape2D_aiq8p")
+
+[node name="DeadCollisionShape" type="CollisionShape2D" parent="CharacterBody2D" unique_id=623933589]
 shape = SubResource("RectangleShape2D_aiq8p")
