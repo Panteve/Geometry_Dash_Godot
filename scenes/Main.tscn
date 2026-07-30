@@ -2,12 +2,14 @@
 
 [ext_resource type="PackedScene" uid="uid://ch016851gp046" path="res://scenes/Player.tscn" id="1_0bbpv"]
 [ext_resource type="PackedScene" uid="uid://cngquebcg5rs3" path="res://scenes/Nivel.tscn" id="2_rarhs"]
-[ext_resource type="PackedScene" uid="uid://cmvjqjbakkin" path="res://scenes/Obstaculo.tscn" id="3_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://cmvjqjbakkin" path="res://scenes/obsRectangulo.tscn" id="3_vcsgt"]
 
 [node name="Main" type="Node2D" unique_id=1122697945]
 
 [node name="Player" parent="." unique_id=713773703 instance=ExtResource("1_0bbpv")]
 
 [node name="Nivel" parent="." unique_id=1289267309 instance=ExtResource("2_rarhs")]
+position = Vector2(57, 216)
 
 [node name="Obsataculo" parent="Nivel" unique_id=747811381 instance=ExtResource("3_vcsgt")]
+position = Vector2(176, -126)
