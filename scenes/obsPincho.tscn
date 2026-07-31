@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://chv8fdurlspsv"]
+
+[ext_resource type="Texture2D" uid="uid://c5mpormvkw45f" path="res://assets/Obstaculo.png" id="1_pcc5d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onsl3"]
+size = Vector2(876, 891)
+
+[node name="Pincho" type="Node2D"]
+position = Vector2(12, 0)
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(6, 0)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("1_pcc5d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(10, -98)
+shape = SubResource("RectangleShape2D_onsl3")
+debug_color = Color(1, 0, 0, 0.42)
+
