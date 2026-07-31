@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://ch016851gp046"]
+
+[ext_resource type="Texture2D" uid="uid://dnxba55i5joq6" path="res://assets/Cubo.jpeg" id="1_p0vlq"]
+[ext_resource type="Script" uid="uid://bfaow1iuysloy" path="res://scripts/player.gd" id="1_v6fml"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_azul"]
+size = Vector2(120, 120)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_roja"]
+size = Vector2(49.75, 51)
+
+[node name="Player" type="Node2D" unique_id=491615235]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1556130930]
+collision_layer = 4
+script = ExtResource("1_v6fml")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=2068084633]
+texture = ExtResource("1_p0vlq")
+
+[node name="HitboxAzulInterior" type="CollisionShape2D" parent="CharacterBody2D" unique_id=157833181]
+shape = SubResource("RectangleShape2D_azul")
+debug_color = Color(0, 0.6, 1, 0.42)
+
+[node name="HitboxRojaExterior" type="Area2D" parent="CharacterBody2D" unique_id=370298890]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/HitboxRojaExterior" unique_id=837883812]
+scale = Vector2(0.7, 0.7)
+shape = SubResource("RectangleShape2D_roja")
+debug_color = Color(1, 0, 0, 0.42)
+
+[connection signal="area_entered" from="CharacterBody2D/HitboxRojaExterior" to="CharacterBody2D" method="_on_hitbox_roja_area_entered"]
+[connection signal="body_entered" from="CharacterBody2D/HitboxRojaExterior" to="CharacterBody2D" method="_on_hitbox_roja_body_entered"]
