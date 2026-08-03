@@ -15,13 +15,17 @@ func _physics_process(delta: float) -> void:
 	velocity.x = SPEED
 
 	move_and_slide()
+	if is_on_wall():
+		die()
 
 
 func _on_hitbox_roja_area_entered(_area: Area2D) -> void:
+	print("Hit something")
 	die()
 
 
 func _on_hitbox_roja_body_entered(_body: Node2D) -> void:
+	print("Hit something")
 	die()
 
 
