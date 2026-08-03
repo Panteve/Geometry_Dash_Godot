@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c5mpormvkw45f" path="res://assets/Obstaculo.png" id="1_pcc5d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onsl3"]
-size = Vector2(212, 338.75)
+size = Vector2(281, 611)
 
 [node name="Pincho" type="Node2D" unique_id=1732579321]
 position = Vector2(12, 0)
@@ -17,6 +17,6 @@ collision_mask = 0
 texture = ExtResource("1_pcc5d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=483049219]
-position = Vector2(21, -180.375)
+position = Vector2(15, 34)
 shape = SubResource("RectangleShape2D_onsl3")
 debug_color = Color(1, 0, 0, 0.42)

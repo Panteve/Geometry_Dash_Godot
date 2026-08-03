@@ -18,16 +18,9 @@ func _physics_process(delta: float) -> void:
 	if is_on_wall():
 		die()
 
-
 func _on_hitbox_roja_area_entered(_area: Area2D) -> void:
-	print("Hit something")
+	print("hola0")
 	die()
-
-
-func _on_hitbox_roja_body_entered(_body: Node2D) -> void:
-	print("Hit something")
-	die()
-
 
 func die() -> void:
 	get_tree().reload_current_scene()
