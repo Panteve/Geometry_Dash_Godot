@@ -7,10 +7,11 @@
 
 [node name="Main" type="Node2D" unique_id=858839779]
 position = Vector2(-132, 8)
+scale = Vector2(0.4462407, 0.40273106)
 
 [node name="Nivel" parent="." unique_id=1399950126 instance=ExtResource("2_rarhs")]
-position = Vector2(57, 216)
-scale = Vector2(1.1916853, 1.4385203)
+position = Vector2(127.73375, 280.58426)
+scale = Vector2(0.6702887, 1.0066793)
 
 [node name="Obsataculo" parent="Nivel" unique_id=454909413 instance=ExtResource("3_vcsgt")]
 position = Vector2(521.11066, 125.823746)
@@ -20,10 +21,10 @@ scale = Vector2(1.5197223, 0.55268025)
 position = Vector2(666.28326, 109.13993)
 scale = Vector2(1.5197223, 0.861424)
 
-[node name="Player" parent="." unique_id=1411805669 instance=ExtResource("1_0bbpv")]
-position = Vector2(191, 333.00003)
-scale = Vector2(0.5862821, 0.50682795)
+[node name="Pincho" parent="Nivel" unique_id=1049679033 instance=ExtResource("3_rarhs")]
+position = Vector2(995.4806, 135.21417)
+scale = Vector2(0.082883336, 0.040989038)
 
-[node name="Pincho" parent="." unique_id=1049679033 instance=ExtResource("3_rarhs")]
-position = Vector2(1204, 415)
-scale = Vector2(0.08353117, 0.057557583)
+[node name="Player" parent="." unique_id=1411805669 instance=ExtResource("1_0bbpv")]
+position = Vector2(222.35356, 382.90643)
+scale = Vector2(0.39098856, 0.3379069)

@@ -16,8 +16,11 @@ collision_layer = 4
 script = ExtResource("1_v6fml")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1344888872]
-position = Vector2(382, -2)
+position = Vector2(204.00003, -4)
+scale = Vector2(-2.6621678, -0.113537356)
+zoom = Vector2(2, 2)
 drag_vertical_enabled = true
+drag_horizontal_offset = -0.06
 drag_top_margin = 1.0
 editor_draw_drag_margin = true
 
