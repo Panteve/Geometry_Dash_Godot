@@ -3,28 +3,22 @@
 [ext_resource type="PackedScene" uid="uid://ch016851gp046" path="res://scenes/Player.tscn" id="1_0bbpv"]
 [ext_resource type="PackedScene" uid="uid://cngquebcg5rs3" path="res://scenes/Nivel.tscn" id="2_rarhs"]
 [ext_resource type="PackedScene" uid="uid://chv8fdurlspsv" path="res://scenes/obsPincho.tscn" id="3_rarhs"]
-[ext_resource type="PackedScene" uid="uid://cmvjqjbakkin" path="res://scenes/obsRectangulo.tscn" id="3_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://buoh772jy23pw" path="res://scenes/Bloque1.tscn" id="3_vcsgt"]
 
 [node name="Main" type="Node2D" unique_id=858839779]
 position = Vector2(-132, 8)
-scale = Vector2(0.4462407, 0.40273106)
+scale = Vector2(0.5, 0.5)
 
 [node name="Nivel" parent="." unique_id=1399950126 instance=ExtResource("2_rarhs")]
-position = Vector2(127.73375, 280.58426)
-scale = Vector2(0.6702887, 1.0066793)
-
-[node name="Obsataculo" parent="Nivel" unique_id=454909413 instance=ExtResource("3_vcsgt")]
-position = Vector2(521.11066, 125.823746)
-scale = Vector2(1.5197223, 0.55268025)
-
-[node name="Obsataculo2" parent="Nivel" unique_id=182952641 instance=ExtResource("3_vcsgt")]
-position = Vector2(666.28326, 109.13993)
-scale = Vector2(1.5197223, 0.861424)
+position = Vector2(177.03452, 250.78773)
 
 [node name="Pincho" parent="Nivel" unique_id=1049679033 instance=ExtResource("3_rarhs")]
-position = Vector2(995.4806, 135.21417)
-scale = Vector2(0.082883336, 0.040989038)
+position = Vector2(996.2889, 143.06113)
+scale = Vector2(0.038, 0.038)
+
+[node name="Bloque1" parent="Nivel" unique_id=1275963389 instance=ExtResource("3_vcsgt")]
+position = Vector2(768.96545, 51.21229)
 
 [node name="Player" parent="." unique_id=1411805669 instance=ExtResource("1_0bbpv")]
 position = Vector2(222.35356, 382.90643)
-scale = Vector2(0.39098856, 0.3379069)
+scale = Vector2(0.3, 0.3)

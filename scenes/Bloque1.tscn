@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://buoh772jy23pw"]
+
+[ext_resource type="Texture2D" uid="uid://ct0ejfyc2xmpd" path="res://assets/Block.webp" id="1_01vgp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u5bk5"]
+size = Vector2(122, 122)
+
+[node name="Bloque1" type="Node2D" unique_id=1275963389]
+
+[node name="Block" type="Sprite2D" parent="." unique_id=975397542]
+position = Vector2(61, 61)
+texture = ExtResource("1_01vgp")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1969452765]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=416519497]
+position = Vector2(61, 61)
+shape = SubResource("RectangleShape2D_u5bk5")

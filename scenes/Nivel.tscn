@@ -2,23 +2,18 @@
 
 [ext_resource type="Texture2D" uid="uid://bfaclw62x3d1j" path="res://assets/Escenario.jpeg" id="1_bvore"]
 
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_26r0l"]
-a = Vector2(995, 7)
-b = Vector2(-599.75, 9.5)
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_u5bk5"]
+distance = -156.0
 
-[node name="Nivel" type="Node2D"]
+[node name="Nivel" type="Node2D" unique_id=2007845914]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1573293587]
 position = Vector2(803, 31)
-collision_layer = 1
-collision_mask = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1928414865]
 position = Vector2(75, 55)
 texture = ExtResource("1_bvore")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-121, 117)
-shape = SubResource("SegmentShape2D_26r0l")
-debug_color = Color(0, 0.6, 1, 0.42)
-
+[node name="Piso" type="CollisionShape2D" parent="StaticBody2D" unique_id=92768294]
+position = Vector2(-805, -45)
+shape = SubResource("WorldBoundaryShape2D_u5bk5")
