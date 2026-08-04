@@ -16,7 +16,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		$Sprite2D.rotation_degrees = round($Sprite2D.rotation_degrees / 90.0) * 90.0
 	
-	if Input.is_action_pressed("jump") and is_on_floor():
+	if Input.is_action_pressed("jump"):
 		velocity.y = JUMP_VELOCITY
 		
 	velocity.x = SPEED
@@ -27,4 +27,4 @@ func _on_death_hitbox(_node: Node2D) -> void:
 	die()
 
 func die() -> void:
-	get_tree().call_deferred("reload_current_scene")
+	get_tree().reload_current_scene()

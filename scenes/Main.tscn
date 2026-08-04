@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cngquebcg5rs3" path="res://scenes/Nivel.tscn" id="2_rarhs"]
 [ext_resource type="PackedScene" uid="uid://chv8fdurlspsv" path="res://scenes/obsPincho.tscn" id="3_rarhs"]
 [ext_resource type="PackedScene" uid="uid://buoh772jy23pw" path="res://scenes/Bloque1.tscn" id="3_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://wnrurhka2c4m" path="res://scenes/PortalNave.tscn" id="5_vcsgt"]
 
 [node name="Main" type="Node2D" unique_id=858839779]
 position = Vector2(-132, 8)
@@ -35,3 +36,6 @@ scale = Vector2(0.3, 0.3)
 [node name="Bloque2" parent="." unique_id=727908799 instance=ExtResource("3_vcsgt")]
 position = Vector2(574, 344)
 scale = Vector2(0.3, 0.3)
+
+[node name="Portal" parent="." unique_id=1051369162 instance=ExtResource("5_vcsgt")]
+position = Vector2(918, 350)

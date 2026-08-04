@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://cngquebcg5rs3"]
 
-[ext_resource type="Texture2D" uid="uid://bfaclw62x3d1j" path="res://assets/Escenario.jpeg" id="1_bvore"]
 [ext_resource type="Texture2D" uid="uid://cwvxs1yhuaie3" path="res://assets/groundSquare_01_001-hd.png" id="2_wnkk8"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_u5bk5"]
@@ -11,10 +10,6 @@ distance = -171.0
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1573293587]
 position = Vector2(803, 31)
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1928414865]
-position = Vector2(75, 55)
-texture = ExtResource("1_bvore")
-
 [node name="Piso" type="CollisionShape2D" parent="StaticBody2D" unique_id=92768294]
 texture_repeat = 2
 position = Vector2(-805, -45)
@@ -23,8 +18,7 @@ shape = SubResource("WorldBoundaryShape2D_u5bk5")
 [node name="GroundSquare01001Hd" type="Sprite2D" parent="StaticBody2D" unique_id=1284859304]
 modulate = Color(0.043137256, 0.34509805, 0.80784315, 1)
 texture_repeat = 2
-position = Vector2(2262, 327)
-scale = Vector2(2, 2)
+position = Vector2(713, 226)
 texture = ExtResource("2_wnkk8")
 region_enabled = true
 region_rect = Rect2(0, 0, 5000, 200)
