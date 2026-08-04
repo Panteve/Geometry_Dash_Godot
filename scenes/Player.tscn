@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://bfaow1iuysloy" path="res://scripts/player.gd" id="1_v6fml"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_roja"]
-size = Vector2(120, 120)
+size = Vector2(121, 120)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_azul"]
 size = Vector2(54.285706, 55.714283)
@@ -16,8 +16,10 @@ collision_layer = 4
 script = ExtResource("1_v6fml")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1344888872]
-position = Vector2(225, -58)
+position = Vector2(1024, -234)
 zoom = Vector2(2.7, 2.7)
+position_smoothing_enabled = true
+position_smoothing_speed = 2.0
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=2068084633]
 texture = ExtResource("1_p0vlq")
