@@ -1,10 +1,13 @@
 extends CharacterBody2D
 
-
 const SPEED = 150.0
-const JUMP_VELOCITY = -230.0
+const JUMP_VELOCITY = -270.0
 const ROTATION_SPEED = 380.0
 
+func _ready() -> void:
+	$HitboxAzulInterior.area_entered.connect(_on_death_hitbox)
+	$HitboxAzulInterior.body_entered.connect(_on_death_hitbox)
+	$DetectorPinchos.area_entered.connect(_on_death_hitbox)
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
@@ -19,10 +22,8 @@ func _physics_process(delta: float) -> void:
 	velocity.x = SPEED
 
 	move_and_slide()
-	if is_on_wall():
-		die()
 
-func _on_hitbox_roja_area_entered(_area: Area2D) -> void:
+func _on_death_hitbox(_node: Node2D) -> void:
 	die()
 
 func die() -> void:
