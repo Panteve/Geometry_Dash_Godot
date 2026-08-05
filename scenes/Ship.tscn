@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dnxba55i5joq6" path="res://assets/Cubo.jpeg" id="1_gjfe0"]
 [ext_resource type="Texture2D" uid="uid://kij76ecjxfxg" path="res://assets/Ship001.webp" id="2_qq457"]
+[ext_resource type="Script" uid="uid://bv2b4ycuiec51" path="res://scripts/ship.gd" id="3_ship"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_roja"]
 size = Vector2(120, 120)
@@ -13,9 +14,15 @@ size = Vector2(54.285706, 55.714283)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1044120342]
 collision_layer = 4
+script = ExtResource("3_ship")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=-1950078424]
+position = Vector2(873, -318)
+zoom = Vector2(2.7, 2.7)
+position_smoothing_speed = 2.0
 
 [node name="HitboxFisicaRoja" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1256964558]
-position = Vector2(-3, 18)
+position = Vector2(-3, 0)
 shape = SubResource("RectangleShape2D_roja")
 debug_color = Color(1, 0, 0, 0.42)
 
@@ -24,7 +31,7 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/DetectorPinchos" unique_id=1799087629]
-position = Vector2(-3, 18)
+position = Vector2(-3, 0)
 shape = SubResource("RectangleShape2D_roja")
 
 [node name="HitboxAzulInterior" type="Area2D" parent="CharacterBody2D" unique_id=775010198]
@@ -32,7 +39,7 @@ collision_layer = 0
 collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/HitboxAzulInterior" unique_id=855553560]
-position = Vector2(-2.9999847, 18)
+position = Vector2(-3, 0)
 scale = Vector2(0.7, 0.7)
 shape = SubResource("RectangleShape2D_azul")
 debug_color = Color(0, 0.6, 1, 0.42)
@@ -43,6 +50,6 @@ texture = ExtResource("1_gjfe0")
 
 [node name="Ship001" type="Sprite2D" parent="CharacterBody2D" unique_id=661379375]
 modulate = Color(0, 1, 0, 1)
-position = Vector2(-6.000001, 31.000004)
+position = Vector2(-6, 13)
 scale = Vector2(1.3, 1.3)
 texture = ExtResource("2_qq457")

@@ -4,10 +4,14 @@ const SPEED = 150.0
 const JUMP_VELOCITY = -270.0
 const ROTATION_SPEED = 380.0
 
+var fixed_camera_y: float
+
 func _ready() -> void:
 	$HitboxAzulInterior.area_entered.connect(_on_death_hitbox)
 	$HitboxAzulInterior.body_entered.connect(_on_death_hitbox)
 	$DetectorPinchos.area_entered.connect(_on_death_hitbox)
+	# Guardar la posición Y inicial de la cámara
+	fixed_camera_y = $Camera2D.global_position.y
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
@@ -22,6 +26,9 @@ func _physics_process(delta: float) -> void:
 	velocity.x = SPEED
 
 	move_and_slide()
+	
+	if fixed_camera_y != 0.0:
+		$Camera2D.global_position.y = fixed_camera_y
 
 func _on_death_hitbox(_node: Node2D) -> void:
 	die()

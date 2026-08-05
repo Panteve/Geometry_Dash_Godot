@@ -30,11 +30,11 @@ position = Vector2(222.35356, 382.90643)
 scale = Vector2(0.3, 0.3)
 
 [node name="Bloque1" parent="." unique_id=1275963389 instance=ExtResource("3_vcsgt")]
-position = Vector2(574, 380)
+position = Vector2(574, 382)
 scale = Vector2(0.3, 0.3)
 
 [node name="Bloque2" parent="." unique_id=727908799 instance=ExtResource("3_vcsgt")]
-position = Vector2(574, 344)
+position = Vector2(574, 346)
 scale = Vector2(0.3, 0.3)
 
 [node name="Portal" parent="." unique_id=1051369162 instance=ExtResource("5_vcsgt")]

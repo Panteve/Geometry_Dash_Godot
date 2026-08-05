@@ -16,9 +16,8 @@ collision_layer = 4
 script = ExtResource("1_v6fml")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1344888872]
-position = Vector2(1018, -154)
+position = Vector2(896, -297)
 zoom = Vector2(2.7, 2.7)
-position_smoothing_enabled = true
 position_smoothing_speed = 2.0
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=2068084633]
