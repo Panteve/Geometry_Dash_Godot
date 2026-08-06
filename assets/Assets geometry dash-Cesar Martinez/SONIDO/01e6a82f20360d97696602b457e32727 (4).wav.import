@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dqgxp50vjdgel"
+path="res://.godot/imported/01e6a82f20360d97696602b457e32727 (4).wav-7422f3a038422bae44a41d5a9ae59f6c.sample"
+
+[deps]
+
+source_file="res://assets/Assets geometry dash-Cesar Martinez/SONIDO/01e6a82f20360d97696602b457e32727 (4).wav"
+dest_files=["res://.godot/imported/01e6a82f20360d97696602b457e32727 (4).wav-7422f3a038422bae44a41d5a9ae59f6c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

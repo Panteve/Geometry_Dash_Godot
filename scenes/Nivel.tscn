@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cngquebcg5rs3"]
 
+[ext_resource type="Texture2D" uid="uid://5oerlwdrxo2p" path="res://assets/Assets geometry dash-Cesar Martinez/FONDO-MENU/OIP (5).jpg" id="1_wnkk8"]
 [ext_resource type="Texture2D" uid="uid://cwvxs1yhuaie3" path="res://assets/groundSquare_01_001-hd.png" id="2_wnkk8"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_u5bk5"]
@@ -10,6 +11,11 @@ normal = Vector2(0, 1)
 distance = -167.0
 
 [node name="Nivel" type="Node2D" unique_id=2007845914]
+
+[node name="Oip(5)" type="Sprite2D" parent="." unique_id=58439665]
+position = Vector2(261, 2)
+scale = Vector2(1.1012658, 1.1094306)
+texture = ExtResource("1_wnkk8")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1573293587]
 position = Vector2(803, 31)

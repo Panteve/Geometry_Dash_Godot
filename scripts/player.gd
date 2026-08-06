@@ -10,6 +10,7 @@ enum FORM {
 	SHIP
 }
 
+#//TODO: (RECORDAR A DIEGO) HACER QUE EL TECHO DESAPAREZCA CUANDO ESTA EN CUBO
 var current_form = FORM.CUBO
 
 func _ready() -> void:
