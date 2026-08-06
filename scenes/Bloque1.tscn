@@ -2,8 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://ct0ejfyc2xmpd" path="res://assets/Block.webp" id="1_01vgp"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uxa2c"]
+size = Vector2(122.5, 16.5)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u5bk5"]
-size = Vector2(122, 122)
+size = Vector2(122, 106)
 
 [node name="Bloque1" type="Node2D" unique_id=1275963389]
 
@@ -13,6 +16,14 @@ texture = ExtResource("1_01vgp")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1969452765]
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1817838817]
+position = Vector2(60.75, 114)
+rotation = -3.1415925
+shape = SubResource("RectangleShape2D_uxa2c")
+one_way_collision = true
+debug_color = Color(0.98762673, 0, 0.31599858, 0.41960785)
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=416519497]
-position = Vector2(61, 61)
+position = Vector2(61, 53)
 shape = SubResource("RectangleShape2D_u5bk5")
+one_way_collision = true

@@ -6,6 +6,8 @@ func _ready() -> void:
 		body_entered.connect(_on_body_entered)
 		
 func _on_body_entered(body: Node2D) -> void:
+	#PROMTP USADO: "Necesito que me ayudes a crear una hitbox  que cuando el jugador la 
+	#toque cambie la escena a la de la nave"
 	if body.get_parent() and body.get_parent().name.begins_with("Player"): # verif. si fue el cubo
 		var player_body = body # Este es el CharacterBody2D que realmente se movió por el nivel
 		var player_node = body.get_parent() # Este es el Node2D raíz que se quedó en el inicio
@@ -18,7 +20,6 @@ func _on_body_entered(body: Node2D) -> void:
 		var ship_body = nueva_nave.get_node("CharacterBody2D")
 		ship_body.position = player_body.position
 		
-		# Pasar la posición fija de la cámara para que no haya un salto al cambiar de personaje
 		if "fixed_camera_y" in player_body:
 			ship_body.fixed_camera_y = player_body.fixed_camera_y
 			

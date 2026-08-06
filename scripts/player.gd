@@ -7,7 +7,6 @@ const ROTATION_SPEED = 380.0
 var fixed_camera_y: float
 
 func _ready() -> void:
-	$HitboxAzulInterior.area_entered.connect(_on_death_hitbox)
 	$HitboxAzulInterior.body_entered.connect(_on_death_hitbox)
 	$DetectorPinchos.area_entered.connect(_on_death_hitbox)
 	# Guardar la posición Y inicial de la cámara
