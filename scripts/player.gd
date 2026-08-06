@@ -3,6 +3,8 @@ extends CharacterBody2D
 const SPEED = 150.0
 const JUMP_VELOCITY = -270.0
 const ROTATION_SPEED = 380.0
+@onready var explosion = $Explosion_die
+var is_dead = false
 
 var fixed_camera_y: float
 enum FORM {
@@ -21,6 +23,7 @@ func _ready() -> void:
 	print(current_form)
 	# Guardar la posición Y inicial de la cámara
 	fixed_camera_y = $Camera2D.global_position.y
+	explosion.visible = false
 
 func _physics_process(delta: float) -> void:
 	velocity += get_gravity() * delta
@@ -59,5 +62,19 @@ func set_mode():
 			$Nave.visible = false
 			$Cubo.visible = true
 			current_form = FORM.CUBO
-func die() -> void:
-	get_tree().call_deferred("reload_current_scene")
+func die():
+	if is_dead:
+		return
+	is_dead = true
+	velocity = Vector2.ZERO
+	set_physics_process(false)
+
+	$Cubo.visible = false
+	$Nave.visible = false
+	$Cubo_Nave.visible = false
+	explosion.visible = true
+	explosion.play("dead")
+
+	await get_tree().create_timer(0.20).timeout
+
+	get_tree().reload_current_scene()

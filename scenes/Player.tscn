@@ -3,6 +3,50 @@
 [ext_resource type="Texture2D" uid="uid://dnxba55i5joq6" path="res://assets/Cubo.jpeg" id="1_p0vlq"]
 [ext_resource type="Script" uid="uid://bfaow1iuysloy" path="res://scripts/player.gd" id="1_v6fml"]
 [ext_resource type="Texture2D" uid="uid://kij76ecjxfxg" path="res://assets/Ship001.webp" id="3_3li8b"]
+[ext_resource type="Texture2D" uid="uid://r41mrw25fdeo" path="res://assets/Assets geometry dash-Cesar Martinez/PARTICULA-EXPLOSION-EFECTOS/explosion3-removebg-preview.png" id="4_mdl7e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qu4a1"]
+atlas = ExtResource("4_mdl7e")
+region = Rect2(60, 186, 60, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_70d11"]
+atlas = ExtResource("4_mdl7e")
+region = Rect2(92, 0, 92, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cw2d6"]
+atlas = ExtResource("4_mdl7e")
+region = Rect2(184, 0, 92, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_khinc"]
+atlas = ExtResource("4_mdl7e")
+region = Rect2(276, 0, 92, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bruh7"]
+atlas = ExtResource("4_mdl7e")
+region = Rect2(368, 0, 92, 90)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wp5od"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qu4a1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_70d11")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cw2d6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_khinc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bruh7")
+}],
+"loop": 1,
+"name": &"dead",
+"speed": 10.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_roja"]
 size = Vector2(121, 120)
@@ -33,6 +77,13 @@ position_smoothing_speed = 2.0
 
 [node name="Cubo" type="Sprite2D" parent="CharacterBody2D" unique_id=2068084633]
 texture = ExtResource("1_p0vlq")
+
+[node name="Explosion_die" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=564387571]
+light_mask = 0
+scale = Vector2(5, 3.736)
+sprite_frames = SubResource("SpriteFrames_wp5od")
+animation = &"dead"
+frame_progress = 0.34324136
 
 [node name="HitboxFisicaRoja" type="CollisionShape2D" parent="CharacterBody2D" unique_id=907695807]
 shape = SubResource("RectangleShape2D_roja")
