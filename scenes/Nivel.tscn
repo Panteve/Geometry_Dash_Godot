@@ -5,6 +5,10 @@
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_u5bk5"]
 distance = -171.0
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uxa2c"]
+normal = Vector2(0, 1)
+distance = -167.0
+
 [node name="Nivel" type="Node2D" unique_id=2007845914]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1573293587]
@@ -14,11 +18,24 @@ position = Vector2(803, 31)
 texture_repeat = 2
 position = Vector2(-805, -45)
 shape = SubResource("WorldBoundaryShape2D_u5bk5")
+one_way_collision = true
 
-[node name="GroundSquare01001Hd" type="Sprite2D" parent="StaticBody2D" unique_id=1284859304]
+[node name="GroundSquare01001Hd" type="Sprite2D" parent="StaticBody2D/Piso" unique_id=1284859304]
 modulate = Color(0.043137256, 0.34509805, 0.80784315, 1)
 texture_repeat = 2
-position = Vector2(713, 226)
+position = Vector2(1518, 271)
+texture = ExtResource("2_wnkk8")
+region_enabled = true
+region_rect = Rect2(0, 0, 50000, 200)
+
+[node name="Collision_Techo" type="CollisionShape2D" parent="StaticBody2D" unique_id=833410609]
+shape = SubResource("WorldBoundaryShape2D_uxa2c")
+
+[node name="GroundSquare01001Hd2" type="Sprite2D" parent="StaticBody2D/Collision_Techo" unique_id=1331929677]
+modulate = Color(0.043137256, 0.34509805, 0.80784315, 1)
+texture_repeat = 2
+position = Vector2(617, -264)
+rotation = -3.1377196
 texture = ExtResource("2_wnkk8")
 region_enabled = true
 region_rect = Rect2(0, 0, 50000, 200)
