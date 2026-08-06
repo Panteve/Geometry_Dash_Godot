@@ -17,7 +17,36 @@ position = Vector2(178, 262)
 position = Vector2(500, 142)
 scale = Vector2(0.043, 0.039)
 
-[node name="Pincho2" parent="Nivel" unique_id=1732579321 instance=ExtResource("3_rarhs")]
+[node name="Pincho5" parent="Nivel" unique_id=1732579321 instance=ExtResource("3_rarhs")]
+position = Vector2(1167.9999, -20)
+rotation = 3.1331203
+scale = Vector2(0.043, 0.039)
+
+[node name="Pincho4" parent="Nivel" unique_id=966474579 instance=ExtResource("3_rarhs")]
+position = Vector2(1358, 68)
+scale = Vector2(0.043, 0.039)
+
+[node name="Pincho8" parent="Nivel" unique_id=426136058 instance=ExtResource("3_rarhs")]
+position = Vector2(1762, 140)
+scale = Vector2(0.043, 0.039)
+
+[node name="Pincho6" parent="Nivel" unique_id=1770446088 instance=ExtResource("3_rarhs")]
+position = Vector2(1722, 140)
+scale = Vector2(0.043, 0.039)
+
+[node name="Pincho7" parent="Nivel" unique_id=44935450 instance=ExtResource("3_rarhs")]
+position = Vector2(1722, 140)
+scale = Vector2(0.043, 0.039)
+
+[node name="Pincho9" parent="Nivel" unique_id=487101642 instance=ExtResource("3_rarhs")]
+position = Vector2(1800.0001, 140)
+scale = Vector2(0.043, 0.039)
+
+[node name="Pincho10" parent="Nivel" unique_id=1863856474 instance=ExtResource("3_rarhs")]
+position = Vector2(2244, -46)
+scale = Vector2(0.043, 0.039)
+
+[node name="Pincho2" parent="Nivel" unique_id=977874078 instance=ExtResource("3_rarhs")]
 position = Vector2(378, 142)
 scale = Vector2(0.043, 0.039)
 
@@ -35,6 +64,34 @@ scale = Vector2(0.3, 0.3)
 
 [node name="Bloque2" parent="." unique_id=727908799 instance=ExtResource("3_vcsgt")]
 position = Vector2(574, 346)
+scale = Vector2(0.3, 0.3)
+
+[node name="Bloque3" parent="." unique_id=982606480 instance=ExtResource("3_vcsgt")]
+position = Vector2(1138, 328)
+scale = Vector2(0.3, 0.3)
+
+[node name="Bloque4" parent="." unique_id=1313198917 instance=ExtResource("3_vcsgt")]
+position = Vector2(1518, 344)
+scale = Vector2(0.3, 0.3)
+
+[node name="Bloque5" parent="." unique_id=1147020934 instance=ExtResource("3_vcsgt")]
+position = Vector2(1328, 194)
+scale = Vector2(0.3, 0.3)
+
+[node name="Bloque6" parent="." unique_id=1044228274 instance=ExtResource("3_vcsgt")]
+position = Vector2(1704, 280)
+scale = Vector2(0.3, 0.3)
+
+[node name="Bloque7" parent="." unique_id=1048638405 instance=ExtResource("3_vcsgt")]
+position = Vector2(1924.0001, 210)
+scale = Vector2(0.3, 0.3)
+
+[node name="Bloque8" parent="." unique_id=905157138 instance=ExtResource("3_vcsgt")]
+position = Vector2(2186, 324)
+scale = Vector2(0.3, 0.3)
+
+[node name="Bloque9" parent="." unique_id=1474712056 instance=ExtResource("3_vcsgt")]
+position = Vector2(2404, 230)
 scale = Vector2(0.3, 0.3)
 
 [node name="Portal" parent="." unique_id=1051369162 instance=ExtResource("5_vcsgt")]
