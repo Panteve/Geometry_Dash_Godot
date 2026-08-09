@@ -1,20 +1,25 @@
 [gd_scene format=3 uid="uid://cngquebcg5rs3"]
 
-[ext_resource type="Texture2D" uid="uid://5oerlwdrxo2p" path="res://assets/Assets geometry dash-Cesar Martinez/FONDO-MENU/OIP (5).jpg" id="1_wnkk8"]
+[ext_resource type="Texture2D" uid="uid://b3alpaaqux4wq" path="res://assets/Assets geometry dash-Cesar Martinez/FONDO-MENU/OIP (5).jpg" id="1_wnkk8"]
 [ext_resource type="Texture2D" uid="uid://cwvxs1yhuaie3" path="res://assets/Assets geometry dash-Cesar Martinez/OBSTACULOS-PINCHOS/groundSquare_01_001-hd.png" id="2_wnkk8"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_u5bk5"]
 distance = -171.0
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uxa2c"]
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_wnkk8"]
 normal = Vector2(0, 1)
-distance = -167.0
+distance = -238.0
 
 [node name="Nivel" type="Node2D" unique_id=2007845914]
 
-[node name="Oip(5)" type="Sprite2D" parent="." unique_id=58439665]
-position = Vector2(261, 2)
-scale = Vector2(1.1012658, 1.1094306)
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1084945769]
+scroll_scale = Vector2(0.5, 1)
+repeat_size = Vector2(600, 0)
+repeat_times = 100
+
+[node name="Oip(5)" type="Sprite2D" parent="Parallax2D" unique_id=1956317128]
+position = Vector2(73.25002, -35.374996)
+scale = Vector2(1.2689874, 1.5845195)
 texture = ExtResource("1_wnkk8")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1573293587]
@@ -34,15 +39,14 @@ texture = ExtResource("2_wnkk8")
 region_enabled = true
 region_rect = Rect2(0, 0, 50000, 200)
 
-[node name="Collision_Techo" type="CollisionShape2D" parent="StaticBody2D" unique_id=833410609]
-shape = SubResource("WorldBoundaryShape2D_uxa2c")
+[node name="Collision_Techo" type="CollisionShape2D" parent="StaticBody2D" unique_id=833410609 groups=["techo"]]
+visible = false
+shape = SubResource("WorldBoundaryShape2D_wnkk8")
 
 [node name="GroundSquare01001Hd2" type="Sprite2D" parent="StaticBody2D/Collision_Techo" unique_id=1331929677]
 modulate = Color(0.043137256, 0.34509805, 0.80784315, 1)
 texture_repeat = 2
-position = Vector2(617, -264)
-rotation = -3.1377196
+position = Vector2(634, -332)
 texture = ExtResource("2_wnkk8")
 region_enabled = true
 region_rect = Rect2(0, 0, 50000, 200)
-

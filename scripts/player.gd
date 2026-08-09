@@ -7,6 +7,7 @@ const ROTATION_SPEED = 420.0
 @onready var sonido_muerte = $SonidoMuerte
 var is_dead = false
 
+
 var fixed_camera_y: float
 enum FORM {
 	CUBO, 
@@ -30,6 +31,7 @@ func _physics_process(delta: float) -> void:
 	velocity += get_gravity() * delta
 	match current_form:
 		FORM.CUBO:
+			
 			if not is_on_floor():
 				$Cubo.rotation_degrees += ROTATION_SPEED * delta
 			else:
@@ -52,13 +54,16 @@ func _on_death_hitbox(_node: Node2D) -> void:
 	die()
 
 func set_mode():
+	var techo = get_tree().get_first_node_in_group("techo")
 	match current_form:
 		FORM.CUBO:
+			techo.visible = true
 			$Cubo_Nave.visible = true
 			$Nave.visible = true
 			$Cubo.visible = false
 			current_form = FORM.SHIP
 		FORM.SHIP:
+			techo.visible = false
 			$Cubo_Nave.visible = false
 			$Nave.visible = false
 			$Cubo.visible = true
