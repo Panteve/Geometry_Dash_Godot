@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://chv8fdurlspsv" path="res://scenes/obsPincho.tscn" id="3_rarhs"]
 [ext_resource type="PackedScene" uid="uid://buoh772jy23pw" path="res://scenes/Bloque1.tscn" id="3_vcsgt"]
 [ext_resource type="PackedScene" uid="uid://wnrurhka2c4m" path="res://scenes/PortalNave.tscn" id="5_vcsgt"]
+[ext_resource type="PackedScene" path="res://scenes/MenuPausa.tscn" id="6_nxtc6"]
 
 [node name="Main" type="Node2D" unique_id=858839779]
 position = Vector2(-132, 8)
