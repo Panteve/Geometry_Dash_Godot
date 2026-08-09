@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c0hr81xwwuxnx" path="res://assets/Assets geometry dash-Cesar Martinez/PORTALES/ShipPortalLabelled.webp" id="2_ke3id"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u5bk5"]
-size = Vector2(29, 85)
+size = Vector2(57, 102)
 
 [node name="Portal" type="Node2D" unique_id=1051369162]
 
@@ -17,6 +17,5 @@ script = ExtResource("1_gw21t")
 texture = ExtResource("2_ke3id")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PortalNave" unique_id=1149793431]
-position = Vector2(2.5, -0.5)
+position = Vector2(2.5, 0)
 shape = SubResource("RectangleShape2D_u5bk5")
-

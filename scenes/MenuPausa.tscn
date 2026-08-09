@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://idnt4hirtj6o" path="res://assets/Assets geometry dash-Cesar Martinez/BOTONES/Back to menu.png" id="2_menu"]
 [ext_resource type="Texture2D" uid="uid://cmlw2fsvda2so" path="res://assets/Assets geometry dash-Cesar Martinez/BOTONES/Play level.png" id="3_play"]
 [ext_resource type="Texture2D" uid="uid://cqf8mr5oviyti" path="res://assets/Assets geometry dash-Cesar Martinez/BOTONES/Restart.png" id="4_restart"]
+[ext_resource type="Texture2D" uid="uid://cnqd88ptetpbs" path="res://assets/Assets geometry dash-Cesar Martinez/BOTONES/epicbox.png" id="5_hs8k6"]
 
 [node name="MenuPausa" type="Control" unique_id=708036259]
 process_mode = 3
@@ -48,7 +49,11 @@ texture_normal = ExtResource("3_play")
 layout_mode = 2
 texture_normal = ExtResource("4_restart")
 
+[node name="Epicbox" type="Sprite2D" parent="." unique_id=2037324279]
+position = Vector2(588, 327.50003)
+scale = Vector2(1, 0.64900005)
+texture = ExtResource("5_hs8k6")
+
 [connection signal="pressed" from="CenterContainer/HBoxContainer/MenuBtn" to="." method="_on_menu_pressed"]
 [connection signal="pressed" from="CenterContainer/HBoxContainer/PlayBtn" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="CenterContainer/HBoxContainer/RestartBtn" to="." method="_on_restart_pressed"]
-
