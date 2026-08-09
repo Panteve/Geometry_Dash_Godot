@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://buoh772jy23pw"]
 
-[ext_resource type="Texture2D" uid="uid://ct0ejfyc2xmpd" path="res://assets/Block.webp" id="1_01vgp"]
+[ext_resource type="Texture2D" uid="uid://ct0ejfyc2xmpd" path="res://assets/Assets geometry dash-Cesar Martinez/OBSTACULOS-PINCHOS/Block.webp" id="1_01vgp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uxa2c"]
 size = Vector2(122.5, 16.5)

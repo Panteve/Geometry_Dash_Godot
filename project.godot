@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Geometry_Dash_Godot"
-run/main_scene="uid://bfrpd1y41clsx"
+run/main_scene="res://scenes/MenuPrincipal.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

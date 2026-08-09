@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://idnt4hirtj6o"
-path="res://.godot/imported/Back to menu.png-f63c1cac9bb33492e64080ea09e8c389.ctex"
+uid="uid://c0hr81xwwuxnx"
+path="res://.godot/imported/ShipPortalLabelled.webp-419eb7903112d2fddfeef3a0e2730499.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Back to menu.png"
-dest_files=["res://.godot/imported/Back to menu.png-f63c1cac9bb33492e64080ea09e8c389.ctex"]
+source_file="res://assets/Assets geometry dash-Cesar Martinez/PORTALES/ShipPortalLabelled.webp"
+dest_files=["res://.godot/imported/ShipPortalLabelled.webp-419eb7903112d2fddfeef3a0e2730499.ctex"]
 
 [params]
 

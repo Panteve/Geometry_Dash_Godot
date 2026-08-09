@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1thnpkbvs8xa"
-path="res://.godot/imported/Normal.webp-23309d7a4519101d0c6a2f7a57be47fc.ctex"
+uid="uid://dnxba55i5joq6"
+path="res://.godot/imported/Cubo.jpeg-5287aab30ef8977172e4633c99c5f8c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Normal.webp"
-dest_files=["res://.godot/imported/Normal.webp-23309d7a4519101d0c6a2f7a57be47fc.ctex"]
+source_file="res://assets/Assets geometry dash-Cesar Martinez/PLAYER-NAVE-MONEDA/Cubo.jpeg"
+dest_files=["res://.godot/imported/Cubo.jpeg-5287aab30ef8977172e4633c99c5f8c2.ctex"]
 
 [params]
 

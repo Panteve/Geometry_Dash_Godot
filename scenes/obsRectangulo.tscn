@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cmvjqjbakkin"]
 
-[ext_resource type="Texture2D" uid="uid://dmenkj3ggobqo" path="res://assets/Rectangulo.jpeg" id="1_2jybd"]
+[ext_resource type="Texture2D" uid="uid://dmenkj3ggobqo" path="res://assets/Assets geometry dash-Cesar Martinez/OBSTACULOS-PINCHOS/Rectangulo.jpeg" id="1_2jybd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1yohh"]
 size = Vector2(36, 101.5)
@@ -15,3 +15,4 @@ texture = ExtResource("1_2jybd")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1900586555]
 shape = SubResource("RectangleShape2D_1yohh")
 debug_color = Color(0, 0.6, 1, 0.42)
+

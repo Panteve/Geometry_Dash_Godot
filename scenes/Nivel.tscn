@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cngquebcg5rs3"]
 
 [ext_resource type="Texture2D" uid="uid://5oerlwdrxo2p" path="res://assets/Assets geometry dash-Cesar Martinez/FONDO-MENU/OIP (5).jpg" id="1_wnkk8"]
-[ext_resource type="Texture2D" uid="uid://cwvxs1yhuaie3" path="res://assets/groundSquare_01_001-hd.png" id="2_wnkk8"]
+[ext_resource type="Texture2D" uid="uid://cwvxs1yhuaie3" path="res://assets/Assets geometry dash-Cesar Martinez/OBSTACULOS-PINCHOS/groundSquare_01_001-hd.png" id="2_wnkk8"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_u5bk5"]
 distance = -171.0
@@ -45,3 +45,4 @@ rotation = -3.1377196
 texture = ExtResource("2_wnkk8")
 region_enabled = true
 region_rect = Rect2(0, 0, 50000, 200)
+

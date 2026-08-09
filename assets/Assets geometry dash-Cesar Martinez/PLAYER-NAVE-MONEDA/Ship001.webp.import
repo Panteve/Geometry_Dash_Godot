@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0hr81xwwuxnx"
-path="res://.godot/imported/ShipPortalLabelled.webp-5c92696463f84caa3399e9c1153fad33.ctex"
+uid="uid://kij76ecjxfxg"
+path="res://.godot/imported/Ship001.webp-69cee8d35162e50518c54a0fda78323d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ShipPortalLabelled.webp"
-dest_files=["res://.godot/imported/ShipPortalLabelled.webp-5c92696463f84caa3399e9c1153fad33.ctex"]
+source_file="res://assets/Assets geometry dash-Cesar Martinez/PLAYER-NAVE-MONEDA/Ship001.webp"
+dest_files=["res://.godot/imported/Ship001.webp-69cee8d35162e50518c54a0fda78323d.ctex"]
 
 [params]
 

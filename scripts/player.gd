@@ -1,9 +1,10 @@
 extends CharacterBody2D
 
-const SPEED = 150.0
+const SPEED = 180.0
 const JUMP_VELOCITY = -270.0
-const ROTATION_SPEED = 380.0
+const ROTATION_SPEED = 420.0
 @onready var explosion = $Explosion_die
+@onready var sonido_muerte = $SonidoMuerte
 var is_dead = false
 
 var fixed_camera_y: float
@@ -37,8 +38,8 @@ func _physics_process(delta: float) -> void:
 				velocity.y = JUMP_VELOCITY
 		FORM.SHIP:
 			if Input.is_action_pressed("jump"):
-				velocity.y -= 1500.0 * delta
-			velocity.y = clamp(velocity.y, -300.0, 400.0)
+				velocity.y -= 1700.0 * delta
+			velocity.y = clamp(velocity.y, -500.0, 300.0)
 			$Nave.rotation_degrees = clamp(velocity.y * 0.1, -25.0, 25.0)
 	velocity.x = SPEED
 
@@ -74,7 +75,8 @@ func die():
 	$Cubo_Nave.visible = false
 	explosion.visible = true
 	explosion.play("dead")
+	sonido_muerte.play()
 
-	await get_tree().create_timer(0.20).timeout
+	await get_tree().create_timer(0.5).timeout
 
 	get_tree().reload_current_scene()

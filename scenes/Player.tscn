@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://ch016851gp046"]
 
-[ext_resource type="Texture2D" uid="uid://dnxba55i5joq6" path="res://assets/Cubo.jpeg" id="1_p0vlq"]
+[ext_resource type="Texture2D" uid="uid://dnxba55i5joq6" path="res://assets/Assets geometry dash-Cesar Martinez/PLAYER-NAVE-MONEDA/Cubo.jpeg" id="1_p0vlq"]
 [ext_resource type="Script" uid="uid://bfaow1iuysloy" path="res://scripts/player.gd" id="1_v6fml"]
-[ext_resource type="Texture2D" uid="uid://kij76ecjxfxg" path="res://assets/Ship001.webp" id="3_3li8b"]
+[ext_resource type="Texture2D" uid="uid://kij76ecjxfxg" path="res://assets/Assets geometry dash-Cesar Martinez/PLAYER-NAVE-MONEDA/Ship001.webp" id="3_3li8b"]
 [ext_resource type="Texture2D" uid="uid://r41mrw25fdeo" path="res://assets/Assets geometry dash-Cesar Martinez/PARTICULA-EXPLOSION-EFECTOS/explosion3-removebg-preview.png" id="4_mdl7e"]
 [ext_resource type="PackedScene" path="res://scenes/MenuPausa.tscn" id="5_menupausa"]
+[ext_resource type="AudioStream" path="res://assets/Assets geometry dash-Cesar Martinez/SONIDO/3a36bf590171c05df5443857c0f5e1ef.wav" id="6_death_sound"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qu4a1"]
 atlas = ExtResource("4_mdl7e")
@@ -107,7 +108,11 @@ scale = Vector2(0.7, 0.7)
 shape = SubResource("RectangleShape2D_azul")
 debug_color = Color(0, 0.6, 1, 0.42)
 
+[node name="SonidoMuerte" type="AudioStreamPlayer" parent="CharacterBody2D"]
+stream = ExtResource("6_death_sound")
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 100
 
 [node name="MenuPausa" parent="CanvasLayer" instance=ExtResource("5_menupausa")]
+

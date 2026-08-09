@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://chv8fdurlspsv"]
 
-[ext_resource type="Texture2D" uid="uid://c5mpormvkw45f" path="res://assets/Obstaculo.png" id="1_pcc5d"]
+[ext_resource type="Texture2D" uid="uid://c5mpormvkw45f" path="res://assets/Assets geometry dash-Cesar Martinez/OBSTACULOS-PINCHOS/Obstaculo.png" id="1_pcc5d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onsl3"]
 size = Vector2(876, 891)
@@ -20,4 +20,5 @@ texture = ExtResource("1_pcc5d")
 position = Vector2(10, -98)
 shape = SubResource("RectangleShape2D_onsl3")
 debug_color = Color(1, 0, 0, 0.42)
+
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kij76ecjxfxg"
-path="res://.godot/imported/Ship001.webp-4db82509d23b9874fa16b93ebd8cd575.ctex"
+uid="uid://db2ywtx378n3h"
+path="res://.godot/imported/bump_01_001.png-6ba650d9e4287a92c82616718ad4a390.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ship001.webp"
-dest_files=["res://.godot/imported/Ship001.webp-4db82509d23b9874fa16b93ebd8cd575.ctex"]
+source_file="res://assets/Assets geometry dash-Cesar Martinez/OBSTACULOS-PINCHOS/bump_01_001.png"
+dest_files=["res://.godot/imported/bump_01_001.png-6ba650d9e4287a92c82616718ad4a390.ctex"]
 
 [params]
 

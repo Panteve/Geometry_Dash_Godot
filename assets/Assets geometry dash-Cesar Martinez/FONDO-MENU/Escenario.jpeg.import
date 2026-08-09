@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3alpaaqux4wq"
-path="res://.godot/imported/OIP (5).jpg-6ccc9b3ec29a27c84a8a6ecd1c807bef.ctex"
+uid="uid://bfaclw62x3d1j"
+path="res://.godot/imported/Escenario.jpeg-e86bff49d347117bb390244efda4384c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/OIP (5).jpg"
-dest_files=["res://.godot/imported/OIP (5).jpg-6ccc9b3ec29a27c84a8a6ecd1c807bef.ctex"]
+source_file="res://assets/Assets geometry dash-Cesar Martinez/FONDO-MENU/Escenario.jpeg"
+dest_files=["res://.godot/imported/Escenario.jpeg-e86bff49d347117bb390244efda4384c.ctex"]
 
 [params]
 

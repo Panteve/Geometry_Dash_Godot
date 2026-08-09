@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmlw2fsvda2so"
-path="res://.godot/imported/Play level.png-d8c977b46edb75393a099dc088dee2cb.ctex"
+uid="uid://dmenkj3ggobqo"
+path="res://.godot/imported/Rectangulo.jpeg-a5459345955803cad1a5ef46795bf3c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Play level.png"
-dest_files=["res://.godot/imported/Play level.png-d8c977b46edb75393a099dc088dee2cb.ctex"]
+source_file="res://assets/Assets geometry dash-Cesar Martinez/OBSTACULOS-PINCHOS/Rectangulo.jpeg"
+dest_files=["res://.godot/imported/Rectangulo.jpeg-a5459345955803cad1a5ef46795bf3c5.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdysamhquajx4"
-path="res://.godot/imported/Logo.png-f4b7c4ba7d9b168635416fce503fab9f.ctex"
+uid="uid://ct0ejfyc2xmpd"
+path="res://.godot/imported/Block.webp-2fb9c117ce7b7369b41e587a8ed5af39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Logo.png"
-dest_files=["res://.godot/imported/Logo.png-f4b7c4ba7d9b168635416fce503fab9f.ctex"]
+source_file="res://assets/Assets geometry dash-Cesar Martinez/OBSTACULOS-PINCHOS/Block.webp"
+dest_files=["res://.godot/imported/Block.webp-2fb9c117ce7b7369b41e587a8ed5af39.ctex"]
 
 [params]
 

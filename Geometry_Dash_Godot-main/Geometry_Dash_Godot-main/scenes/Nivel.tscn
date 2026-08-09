@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cngquebcg5rs3"]
 
-[ext_resource type="Texture2D" uid="uid://bfaclw62x3d1j" path="res://assets/Escenario.jpeg" id="1_bvore"]
+[ext_resource type="Texture2D" uid="uid://bfaclw62x3d1j" path="res://assets/Assets geometry dash-Cesar Martinez/FONDO-MENU/Escenario.jpeg" id="1_bvore"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_26r0l"]
 a = Vector2(995, 7)
@@ -21,4 +21,5 @@ texture = ExtResource("1_bvore")
 position = Vector2(-121, 117)
 shape = SubResource("SegmentShape2D_26r0l")
 debug_color = Color(0, 0.6, 1, 0.42)
+
 
