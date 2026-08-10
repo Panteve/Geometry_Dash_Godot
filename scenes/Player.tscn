@@ -67,17 +67,17 @@ position = Vector2(896, -297)
 zoom = Vector2(2.7, 2.7)
 position_smoothing_speed = 2.0
 
-[node name="Cubo" type="Sprite2D" parent="CharacterBody2D" unique_id=2068084633]
+[node name="Cubo_Nave" type="Sprite2D" parent="CharacterBody2D" unique_id=1390036519]
+scale = Vector2(0.7, 0.7)
 texture = ExtResource("1_p0vlq")
 
 [node name="Nave" type="Sprite2D" parent="CharacterBody2D" unique_id=651014728]
 modulate = Color(0, 1, 0, 1)
-position = Vector2(-6, 13)
-scale = Vector2(1.3, 1.3)
+position = Vector2(-5.9999995, 13)
+scale = Vector2(1.2999998, 1.2999998)
 texture = ExtResource("3_3li8b")
 
-[node name="Cubo_Nave" type="Sprite2D" parent="CharacterBody2D" unique_id=1390036519]
-scale = Vector2(0.7, 0.7)
+[node name="Cubo" type="Sprite2D" parent="CharacterBody2D" unique_id=2068084633]
 texture = ExtResource("1_p0vlq")
 
 [node name="Explosion_die" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=564387571]
