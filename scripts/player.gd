@@ -74,7 +74,6 @@ func impulse():
 
 func final():
 	is_final = true
-	techo.disable = true
 	await get_tree().create_timer(1).timeout
 	get_tree().change_scene_to_file("res://scenes/SeleccionNiveles.tscn")
 	
