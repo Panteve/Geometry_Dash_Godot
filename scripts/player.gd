@@ -71,7 +71,7 @@ func die():
 	if is_dead:
 		return
 	is_dead = true
-	
+	musica_nivel.stop()
 	velocity = Vector2.ZERO
 	set_physics_process(false)
 	$Cubo.visible = false

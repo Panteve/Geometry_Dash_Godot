@@ -8,4 +8,5 @@ func _ready():
 
 
 func _al_presionar_jugar():
-	get_tree().change_scene_to_file("res://scenes/Main.tscn")
+	get_tree().change_scene_to_file("res://scenes/SeleccionNiveles.tscn")
+# agregar selección de personajes
