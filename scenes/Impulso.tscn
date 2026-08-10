@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://maqtv8q0paug"]
 
 [ext_resource type="Texture2D" uid="uid://2vp8h5co7bsb" path="res://assets/Assets geometry dash-Cesar Martinez/PORTALES/bump_01_001.png" id="1_3a5tm"]
-[ext_resource type="Script" uid="uid://cja2giajsnko6" path="res://scenes/impulso.gd" id="1_v000n"]
+[ext_resource type="Script" uid="uid://cja2giajsnko6" path="res://scripts/impulso.gd" id="1_v000n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onsl3"]
 size = Vector2(31, 7)
