@@ -4,8 +4,8 @@
 [ext_resource type="Script" uid="uid://bfaow1iuysloy" path="res://scripts/player.gd" id="1_v6fml"]
 [ext_resource type="Texture2D" uid="uid://kij76ecjxfxg" path="res://assets/Assets geometry dash-Cesar Martinez/PLAYER-NAVE-MONEDA/Ship001.webp" id="3_3li8b"]
 [ext_resource type="Texture2D" uid="uid://r41mrw25fdeo" path="res://assets/Assets geometry dash-Cesar Martinez/PARTICULA-EXPLOSION-EFECTOS/explosion3-removebg-preview.png" id="4_mdl7e"]
-[ext_resource type="PackedScene" path="res://scenes/MenuPausa.tscn" id="5_menupausa"]
-[ext_resource type="AudioStream" path="res://assets/Assets geometry dash-Cesar Martinez/SONIDO/3a36bf590171c05df5443857c0f5e1ef.wav" id="6_death_sound"]
+[ext_resource type="PackedScene" uid="uid://cyjln8t8ywckh" path="res://scenes/MenuPausa.tscn" id="5_menupausa"]
+[ext_resource type="AudioStream" uid="uid://dft4sdyng8g3n" path="res://assets/Assets geometry dash-Cesar Martinez/SONIDO/3a36bf590171c05df5443857c0f5e1ef.wav" id="6_death_sound"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qu4a1"]
 atlas = ExtResource("4_mdl7e")
@@ -108,12 +108,10 @@ scale = Vector2(0.7, 0.7)
 shape = SubResource("RectangleShape2D_azul")
 debug_color = Color(0, 0.6, 1, 0.42)
 
-[node name="SonidoMuerte" type="AudioStreamPlayer" parent="CharacterBody2D"]
+[node name="SonidoMuerte" type="AudioStreamPlayer" parent="CharacterBody2D" unique_id=727637074]
 stream = ExtResource("6_death_sound")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1585964914]
 layer = 100
 
-[node name="MenuPausa" parent="CanvasLayer" instance=ExtResource("5_menupausa")]
-visible = false
-
+[node name="MenuPausa" parent="CanvasLayer" unique_id=1083748284 instance=ExtResource("5_menupausa")]

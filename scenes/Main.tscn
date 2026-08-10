@@ -70,7 +70,7 @@ position = Vector2(740, 88)
 position = Vector2(2510, 34)
 
 [node name="Player" parent="." unique_id=1411805669 instance=ExtResource("1_0bbpv")]
-position = Vector2(-140.00002, -146)
+position = Vector2(-330, -130)
 scale = Vector2(0.3, 0.3)
 
 [node name="MusicaNivel" type="AudioStreamPlayer" parent="." unique_id=273229102 groups=["musicaNivel"]]

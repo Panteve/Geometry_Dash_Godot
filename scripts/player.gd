@@ -67,6 +67,9 @@ func set_mode():
 			$Cubo.visible = true
 			current_form = FORM.CUBO
 
+func impulse(): 
+	velocity.y = JUMP_VELOCITY * 1.5
+	
 func die():
 	if is_dead:
 		return

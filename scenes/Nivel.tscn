@@ -15,9 +15,9 @@ distance = -238.0
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1084945769]
 scroll_scale = Vector2(0.5, 1)
 repeat_size = Vector2(600, 0)
-repeat_times = 100
+repeat_times = 1000
 
-[node name="Oip(5)" type="Sprite2D" parent="Parallax2D" unique_id=1956317128]
+[node name="Fondo" type="Sprite2D" parent="Parallax2D" unique_id=1956317128]
 position = Vector2(73.25002, -35.374996)
 scale = Vector2(1.2689874, 1.5845195)
 texture = ExtResource("1_wnkk8")

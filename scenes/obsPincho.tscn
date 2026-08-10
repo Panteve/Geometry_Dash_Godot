@@ -21,4 +21,3 @@ texture = ExtResource("1_pcc5d")
 position = Vector2(20, -91)
 shape = SubResource("RectangleShape2D_onsl3")
 debug_color = Color(1, 0, 0, 0.42)
-

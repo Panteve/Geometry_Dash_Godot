@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://maqtv8q0paug"]
+
+[ext_resource type="Texture2D" uid="uid://2vp8h5co7bsb" path="res://assets/Assets geometry dash-Cesar Martinez/PORTALES/bump_01_001.png" id="1_3a5tm"]
+[ext_resource type="Script" uid="uid://cja2giajsnko6" path="res://scenes/impulso.gd" id="1_v000n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onsl3"]
+size = Vector2(31, 7)
+
+[node name="Impulso" type="Node2D" unique_id=1290202212]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=284987072]
+collision_layer = 0
+collision_mask = 4
+script = ExtResource("1_v000n")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=232408666]
+scale = Vector2(0.39749998, 0.49999997)
+texture = ExtResource("1_3a5tm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2109725592]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_onsl3")
