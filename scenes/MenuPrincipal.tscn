@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dnxwhjhujm5n3" path="res://assets/Assets geometry dash-Cesar Martinez/BOTONES/GJ_playBtn_001.png" id="4_play"]
 [ext_resource type="Texture2D" uid="uid://bussld3ahj7qo" path="res://assets/Assets geometry dash-Cesar Martinez/BOTONES/Setting.png" id="5_setting"]
 [ext_resource type="Texture2D" uid="uid://idnt4hirtj6o" path="res://assets/Assets geometry dash-Cesar Martinez/BOTONES/Back to menu.png" id="6_back"]
-[ext_resource type="AudioStream" uid="uid://kt7s5a1734fm" path="res://assets/Assets geometry dash-Cesar Martinez/SONIDO/25d9b70c2a39765d56c9af1fb95e7c29 (1).wav" id="7_8ytrl"]
+[ext_resource type="AudioStream" uid="uid://b4s1clbbwa8wi" path="res://assets/Assets geometry dash-Cesar Martinez/SONIDO/menu_theme.mp3" id="7_8ytrl"]
 
 [node name="MenuPrincipal" type="Control" unique_id=703738970]
 layout_mode = 3

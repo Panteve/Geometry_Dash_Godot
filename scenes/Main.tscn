@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://chv8fdurlspsv" path="res://scenes/obsPincho.tscn" id="3_rarhs"]
 [ext_resource type="PackedScene" uid="uid://buoh772jy23pw" path="res://scenes/Bloque1.tscn" id="3_vcsgt"]
 [ext_resource type="PackedScene" uid="uid://wnrurhka2c4m" path="res://scenes/PortalNave.tscn" id="5_vcsgt"]
-[ext_resource type="AudioStream" uid="uid://bt7qaq5r7w21s" path="res://assets/Assets geometry dash-Cesar Martinez/SONIDO/fc65717a786d706245ce43c895558cbd.wav" id="7_music"]
+[ext_resource type="AudioStream" uid="uid://d2xeg4kqc6k3a" path="res://assets/Assets geometry dash-Cesar Martinez/SONIDO/Stereo Madness.mp3" id="6_c01mt"]
 
 [node name="Main" type="Node2D" unique_id=858839779]
 position = Vector2(-132, 8)
@@ -73,8 +73,8 @@ position = Vector2(2510, 34)
 position = Vector2(-140.00002, -146)
 scale = Vector2(0.3, 0.3)
 
-[node name="MusicaNivel" type="AudioStreamPlayer" parent="." unique_id=273229102]
-stream = ExtResource("7_music")
+[node name="MusicaNivel" type="AudioStreamPlayer" parent="." unique_id=273229102 groups=["musicaNivel"]]
+stream = ExtResource("6_c01mt")
 autoplay = true
 
 [node name="Bloque1" parent="." unique_id=1347225478 instance=ExtResource("3_vcsgt")]
