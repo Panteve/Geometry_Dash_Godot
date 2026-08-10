@@ -7,6 +7,7 @@ size = Vector2(185.5, 299)
 
 [node name="Pincho" type="Node2D" unique_id=1732579321]
 position = Vector2(12, 0)
+scale = Vector2(0.043, 0.039)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1888522700]
 position = Vector2(6, 0)

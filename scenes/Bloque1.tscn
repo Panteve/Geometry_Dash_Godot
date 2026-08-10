@@ -9,6 +9,7 @@ size = Vector2(122.5, 16.5)
 size = Vector2(122, 106)
 
 [node name="Bloque1" type="Node2D" unique_id=1275963389]
+scale = Vector2(0.3, 0.3)
 
 [node name="Block" type="Sprite2D" parent="." unique_id=975397542]
 position = Vector2(61, 61)

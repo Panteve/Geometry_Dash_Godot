@@ -21,6 +21,8 @@ repeat_times = 100
 position = Vector2(73.25002, -35.374996)
 scale = Vector2(1.2689874, 1.5845195)
 texture = ExtResource("1_wnkk8")
+region_enabled = true
+region_rect = Rect2(0, 0, 40000, 400)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1573293587]
 position = Vector2(803, 31)
