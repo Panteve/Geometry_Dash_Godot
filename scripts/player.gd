@@ -9,6 +9,7 @@ const ROTATION_SPEED = 420.0
 @onready var musica_nivel = get_tree().get_first_node_in_group("musicaNivel")
 
 var is_dead = false
+var is_final = false
 
 var fixed_camera_y: float
 enum FORM {
@@ -43,7 +44,8 @@ func _physics_process(delta: float) -> void:
 			velocity.y = clamp(velocity.y, -500.0, 300.0)
 			$Nave.rotation_degrees = clamp(velocity.y * 0.1, -25.0, 25.0)
 	velocity.x = SPEED
-
+	if is_final:
+		velocity.y -= 1600.0 * delta
 	move_and_slide()
 	
 	if fixed_camera_y != 0.0:
@@ -69,6 +71,11 @@ func set_mode():
 
 func impulse(): 
 	velocity.y = JUMP_VELOCITY * 1.8
+
+func final():
+	is_final = true
+	await get_tree().create_timer(3).timeout
+	get_tree().change_scene_to_file("res://scenes/SeleccionNiveles.tscn")
 	
 func die():
 	if is_dead:

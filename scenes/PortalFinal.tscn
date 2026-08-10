@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cjsgm02gq7vto"]
+
+[ext_resource type="Texture2D" uid="uid://blv4ogerehtx1" path="res://assets/Assets geometry dash-Cesar Martinez/PORTALES/portal_02_front_0011.png" id="1_hgwmo"]
+[ext_resource type="Script" uid="uid://0uf84di1ai8" path="res://scripts/portal_final.gd" id="1_ppy2h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uxa2c"]
+size = Vector2(149, 415)
+
+[node name="PortalFinal" type="Node2D" unique_id=346823312]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1869409867]
+collision_layer = 0
+collision_mask = 4
+script = ExtResource("1_ppy2h")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1733799250]
+scale = Vector2(1.3313954, 1.494355)
+texture = ExtResource("1_hgwmo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1221097401]
+shape = SubResource("RectangleShape2D_uxa2c")

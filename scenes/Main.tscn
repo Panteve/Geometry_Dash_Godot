@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://wnrurhka2c4m" path="res://scenes/PortalNave.tscn" id="5_vcsgt"]
 [ext_resource type="AudioStream" uid="uid://d2xeg4kqc6k3a" path="res://assets/Assets geometry dash-Cesar Martinez/SONIDO/Stereo Madness.mp3" id="6_c01mt"]
 [ext_resource type="PackedScene" uid="uid://maqtv8q0paug" path="res://scenes/Impulso.tscn" id="7_nxtc6"]
+[ext_resource type="PackedScene" uid="uid://cjsgm02gq7vto" path="res://scenes/PortalFinal.tscn" id="8_jlsqs"]
 
 [node name="Main" type="Node2D" unique_id=858839779]
 position = Vector2(-132, 8)
@@ -697,3 +698,6 @@ position = Vector2(7270, -124)
 
 [node name="Portal2" parent="." unique_id=913432776 instance=ExtResource("5_vcsgt")]
 position = Vector2(8868, -124)
+
+[node name="PortalFinal" parent="." unique_id=346823312 instance=ExtResource("8_jlsqs")]
+position = Vector2(10064, -374)
