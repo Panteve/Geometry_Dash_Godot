@@ -5,8 +5,10 @@ const JUMP_VELOCITY = -270.0
 const ROTATION_SPEED = 420.0
 @onready var explosion = $Explosion_die
 @onready var sonido_muerte = $SonidoMuerte
-var is_dead = false
+@onready var techo = get_tree().get_first_node_in_group("techo")
+@onready var musica_nivel = get_tree().get_first_node_in_group("musicaNivel")
 
+var is_dead = false
 
 var fixed_camera_y: float
 enum FORM {
@@ -14,7 +16,6 @@ enum FORM {
 	SHIP
 }
 
-#//TODO: (RECORDAR A DIEGO) HACER QUE EL TECHO DESAPAREZCA CUANDO ESTA EN CUBO
 var current_form = FORM.CUBO
 
 func _ready() -> void:
@@ -22,7 +23,6 @@ func _ready() -> void:
 	$DetectorPinchos.area_entered.connect(_on_death_hitbox)
 	$Cubo_Nave.visible = false
 	$Nave.visible = false
-	print(current_form)
 	# Guardar la posición Y inicial de la cámara
 	fixed_camera_y = $Camera2D.global_position.y
 	explosion.visible = false
@@ -31,7 +31,6 @@ func _physics_process(delta: float) -> void:
 	velocity += get_gravity() * delta
 	match current_form:
 		FORM.CUBO:
-			
 			if not is_on_floor():
 				$Cubo.rotation_degrees += ROTATION_SPEED * delta
 			else:
@@ -54,7 +53,6 @@ func _on_death_hitbox(_node: Node2D) -> void:
 	die()
 
 func set_mode():
-	var techo = get_tree().get_first_node_in_group("techo")
 	match current_form:
 		FORM.CUBO:
 			techo.visible = true
@@ -68,20 +66,20 @@ func set_mode():
 			$Nave.visible = false
 			$Cubo.visible = true
 			current_form = FORM.CUBO
+
 func die():
 	if is_dead:
 		return
 	is_dead = true
+	
 	velocity = Vector2.ZERO
 	set_physics_process(false)
-
 	$Cubo.visible = false
 	$Nave.visible = false
 	$Cubo_Nave.visible = false
 	explosion.visible = true
 	explosion.play("dead")
 	sonido_muerte.play()
-
+	
 	await get_tree().create_timer(0.5).timeout
-
 	get_tree().reload_current_scene()
