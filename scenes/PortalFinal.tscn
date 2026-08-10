@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://0uf84di1ai8" path="res://scripts/portal_final.gd" id="1_ppy2h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uxa2c"]
-size = Vector2(149, 415)
+size = Vector2(149, 493.5)
 
 [node name="PortalFinal" type="Node2D" unique_id=346823312]
 
@@ -14,8 +14,10 @@ collision_mask = 4
 script = ExtResource("1_ppy2h")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1733799250]
-scale = Vector2(1.3313954, 1.494355)
+position = Vector2(0, 43.687492)
+scale = Vector2(1.3313954, 1.7762098)
 texture = ExtResource("1_hgwmo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1221097401]
+position = Vector2(0, 39.25)
 shape = SubResource("RectangleShape2D_uxa2c")

@@ -248,15 +248,6 @@ position = Vector2(4254, -116)
 [node name="Bloque54" parent="." unique_id=984605958 instance=ExtResource("3_vcsgt")]
 position = Vector2(4434, -116)
 
-[node name="Bloque56" parent="." unique_id=1550422709 instance=ExtResource("3_vcsgt")]
-position = Vector2(4614, -116)
-
-[node name="Bloque59" parent="." unique_id=258737039 instance=ExtResource("3_vcsgt")]
-position = Vector2(4798, -116)
-
-[node name="Bloque63" parent="." unique_id=111008993 instance=ExtResource("3_vcsgt")]
-position = Vector2(4982, -116)
-
 [node name="Bloque68" parent="." unique_id=1919215493 instance=ExtResource("3_vcsgt")]
 position = Vector2(5164, -116)
 
@@ -389,15 +380,6 @@ position = Vector2(5164, -260)
 [node name="Bloque73" parent="." unique_id=188846002 instance=ExtResource("3_vcsgt")]
 position = Vector2(5164, -296)
 
-[node name="Bloque64" parent="." unique_id=1217431273 instance=ExtResource("3_vcsgt")]
-position = Vector2(4982, -152)
-
-[node name="Bloque65" parent="." unique_id=1774504547 instance=ExtResource("3_vcsgt")]
-position = Vector2(4982, -188)
-
-[node name="Bloque66" parent="." unique_id=1317037512 instance=ExtResource("3_vcsgt")]
-position = Vector2(4982, -224.00002)
-
 [node name="Bloque67" parent="." unique_id=760047450 instance=ExtResource("3_vcsgt")]
 position = Vector2(4982, -260)
 
@@ -422,17 +404,8 @@ position = Vector2(8850, -290)
 [node name="Bloque119" parent="." unique_id=2021833035 instance=ExtResource("3_vcsgt")]
 position = Vector2(8850, -326)
 
-[node name="Bloque60" parent="." unique_id=1077000432 instance=ExtResource("3_vcsgt")]
-position = Vector2(4798, -152)
-
-[node name="Bloque61" parent="." unique_id=241602987 instance=ExtResource("3_vcsgt")]
-position = Vector2(4798, -188)
-
 [node name="Bloque62" parent="." unique_id=776752244 instance=ExtResource("3_vcsgt")]
 position = Vector2(4798, -224)
-
-[node name="Bloque57" parent="." unique_id=2010904764 instance=ExtResource("3_vcsgt")]
-position = Vector2(4614, -152)
 
 [node name="Bloque58" parent="." unique_id=429668714 instance=ExtResource("3_vcsgt")]
 position = Vector2(4614, -188)
@@ -510,7 +483,16 @@ position = Vector2(4556, -92)
 position = Vector2(4592, -92)
 
 [node name="Pincho36" parent="." unique_id=1720042133 instance=ExtResource("3_rarhs")]
-position = Vector2(4670.0005, -92)
+position = Vector2(4670, -92)
+
+[node name="Pincho89" parent="." unique_id=1414891941 instance=ExtResource("3_rarhs")]
+position = Vector2(4814, -92)
+
+[node name="Pincho90" parent="." unique_id=1321678695 instance=ExtResource("3_rarhs")]
+position = Vector2(4996, -92)
+
+[node name="Pincho88" parent="." unique_id=1412172619 instance=ExtResource("3_rarhs")]
+position = Vector2(4632, -92)
 
 [node name="Pincho37" parent="." unique_id=1621543736 instance=ExtResource("3_rarhs")]
 position = Vector2(4706, -92)
