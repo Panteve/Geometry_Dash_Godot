@@ -103,4 +103,5 @@ stretch_mode = 5
 
 [node name="MusicaMenu" type="AudioStreamPlayer" parent="." unique_id=994970468]
 stream = ExtResource("7_8ytrl")
+volume_db = 6.386
 autoplay = true

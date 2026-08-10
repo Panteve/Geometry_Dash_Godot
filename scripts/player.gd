@@ -39,7 +39,7 @@ func _physics_process(delta: float) -> void:
 				velocity.y = JUMP_VELOCITY
 		FORM.SHIP:
 			if Input.is_action_pressed("jump"):
-				velocity.y -= 1700.0 * delta
+				velocity.y -= 1500.0 * delta
 			velocity.y = clamp(velocity.y, -500.0, 300.0)
 			$Nave.rotation_degrees = clamp(velocity.y * 0.1, -25.0, 25.0)
 	velocity.x = SPEED
